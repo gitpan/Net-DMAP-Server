@@ -1,6 +1,6 @@
---- #YAML:1.0
+---
 name: Net-DMAP-Server
-version: 0.03
+version: 0.04
 author:
   - Richard Clamp <richardc@unixbeard.net>
 abstract: base class for D[A-Z]AP servers
@@ -15,9 +15,9 @@ build_requires:
 provides:
   Net::DMAP::Server:
     file: lib/Net/DMAP/Server.pm
-    version: 0.03
+    version: 0.04
   Net::DMAP::Server::Playlist:
     file: lib/Net/DMAP/Server/Playlist.pm
   Net::DMAP::Server::Track:
     file: lib/Net/DMAP/Server/Track.pm
-generated_by: Module::Build version 0.25
+generated_by: Module::Build version 0.2608

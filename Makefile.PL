@@ -2,15 +2,15 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
+          'PL_FILES' => {},
+          'INSTALLDIRS' => 'site',
           'NAME' => 'Net::DMAP::Server',
           'VERSION_FROM' => 'lib/Net/DMAP/Server.pm',
           'PREREQ_PM' => {
-                           'Net::DAAP::DMAP' => '1.21',
-                           'Net::Rendezvous::Publish' => '0',
+                           'Test::More' => 0,
                            'POE::Component::Server::HTTP' => '0.05',
-                           'Test::More' => '0'
-                         },
-          'INSTALLDIRS' => 'site',
-          'PL_FILES' => {}
+                           'Net::Rendezvous::Publish' => 0,
+                           'Net::DAAP::DMAP' => '1.21'
+                         }
         )
 ;
